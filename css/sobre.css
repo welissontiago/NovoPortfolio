@@ -1,0 +1,78 @@
+.myphoto-desc {
+  display: flex;
+  gap: 10px;
+}
+
+.myphoto-desc img {
+  width: 100px;
+  height: 80px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.desc-text h1 {
+  font-size: 1.5rem;
+}
+
+.desc-text p {
+  font-size: 0.875rem;
+  max-width: 250px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.flex-container {
+  display: flex;
+  gap: 100px;
+}
+
+.formation ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.formation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formation p {
+  font-size: 0.875rem;
+  max-width: 300px;
+}
+
+.column {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.bolinha {
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: lightskyblue;
+}
+
+li {
+  margin-top: 8px;
+}
+
+@media (max-width: 880px) {
+  .flex-container {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}

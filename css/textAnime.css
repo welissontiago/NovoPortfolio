@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+.text {
+  position: absolute;
+  width: 450px;
+  left: 50%;
+  margin-left: -225px;
+  height: 40px;
+  top: 350px;
+  margin-top: -20px;
+}
+
+p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.word {
+  position: absolute;
+  width: 220px;
+  opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.java {
+  color: #5382a1;
+}
+
+.html {
+  color: #e34f26;
+}
+
+.aws {
+  color: #ff9900;
+}
+
+.css {
+  color: #1572b6;
+}
+
+.angular {
+  color: #dd0031;
+}
+
+.js {
+  color: #f7df1e;
+}
+
+.git {
+  color: #f05032;
+}
+
+.python {
+  color: #3776ab;
+}
+
+.tailwind {
+  color: #00b9d8;
+}
+
+.ia {
+  color: purple;
+}
+
+@media (max-width: 900px) {
+  p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  p {
+    font-size: 1.3rem;
+  }
+  .text {
+    margin-left: -130px;
+  }
+}
